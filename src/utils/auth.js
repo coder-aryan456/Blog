@@ -1,12 +1,15 @@
 import GithubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 import { getServerSession } from "next-auth";
+import { PrismaAdapter } from "@auth/prisma-adapter";
+import prisma from "./connect";
 const dotenv = require("dotenv");
 dotenv.config();
 {
   console.log(process.env.GOOGLE_ID)
 }
 export const authOptions = {
+  adapter :PrismaAdapter(prisma),
   providers: [
     GoogleProvider({
       clientId: "623388786757-7700l9pfciqiu36nhoosb2c2c494rg4u.apps.googleusercontent.com",
