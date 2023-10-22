@@ -3,5 +3,19 @@ Welcome to the repository for our blog website project! This web application is 
 
 Clone the Repository:
 
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/coder-aryan456/Blog.git/https://github.com/coder-aryan456/Blog.git
+cd into main directory
+
+Install dependencies
+npm install
+
+Environment Variables:
+
+MONGODB_URI=your-mongodb-connection-string
+FIREBASE_API_KEY=your-firebase-api-key
+FIREBASE_STORAGE_BUCKET=your-firebase-storage-bucket
+
+Run the Application:
+npm start
+
+
